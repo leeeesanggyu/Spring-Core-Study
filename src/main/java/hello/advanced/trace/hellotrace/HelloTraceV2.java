@@ -44,7 +44,8 @@ public class HelloTraceV2 {
                     addSpace(COMPLETE_PREFIX, traceId.getLevel()), status.getMessage(), resultTimeMs);
         } else {
             log.info("[{}] {}{} time={}ms ex={}", traceId.getId(),
-                    addSpace(EX_PREFIX, traceId.getLevel()), status.getMessage(), resultTimeMs, e.toString());
+                    addSpace(
+                            EX_PREFIX, traceId.getLevel()), status.getMessage(), resultTimeMs, e.toString());
         }
     }
 
