@@ -1,7 +1,10 @@
 package hello.advanced.trace;
 
+import lombok.ToString;
+
 import java.util.UUID;
 
+@ToString
 public class TraceId {
 
     private String id;
