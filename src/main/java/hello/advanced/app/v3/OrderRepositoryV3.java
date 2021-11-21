@@ -21,7 +21,7 @@ public class OrderRepositoryV3 {
             if (itemId.equals("ex")) {
                 throw new IllegalStateException("예외발생 !");
             }
-            sleep(3000);
+            sleep(1000);
 
             trace.end(status);
         } catch(Exception e) {
